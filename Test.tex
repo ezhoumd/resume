@@ -1,0 +1,137 @@
+\documentclass[10pt, letterpaper]{article}
+
+% ===== ONE-PAGE FIT KNOBS =====================================================
+% These two lengths are the vertical shock absorber: they set the air above and
+% below every section heading. Tuned so the content fills the page evenly.
+% Verified: at 8pt/3pt the text fills to y=757 on a 792pt page with a 36pt
+% bottom margin -- i.e. flush to the margin, one page, no overfull boxes.
+% If you add content and it spills to 2 pages: drop to 7pt/3pt, then 6pt/2pt.
+% If you cut content and a gap opens: raise to 9pt/4pt.
+% Body text stays at 10pt either way -- do not shrink the font to fit.
+\newcommand{\secbefore}{3pt}
+\newcommand{\secafter}{4pt}
+% =============================================================================
+
+\usepackage[margin = 0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\setlist[itemize]{leftmargin = *, topsep = 3pt, itemsep = 1pt, parsep = 0pt,
+                  partopsep = 0pt}
+
+\titleformat{\section}
+{\large\bfseries\sffamily}
+{}
+{0em}
+{}[\titlerule]
+\titlespacing*{\section}{0pt}{\secbefore}{\secafter}
+
+\definecolor{linknavy}{HTML}{16407A}
+\hypersetup {
+colorlinks = true,
+urlcolor = linknavy,
+pdftitle = {Ethan Zhou -- Resume},
+pdfauthor = {Ethan Zhou},
+pdfsubject = {Mechanical Engineering Resume}
+}
+
+\begin{document}
+
+\begin{center}
+    {\sffamily\LARGE\bfseries Ethan Zhou}
+    \vspace{2pt} \\
+    \href{mailto:ezhoumd@gmail.com}{ezhoumd@gmail.com}
+    $|$
+    240-246-5970
+    $|$
+    % TODO: GitHub Pages is not enabled on ezhoumd/personal-portfolio yet, so
+    % this URL currently 404s. Enable Pages (or swap in your live domain)
+    % before sending this out.
+    \href{https://ezhoumd.github.io/personal-portfolio/}{Portfolio}
+    $|$
+    \href{https://github.com/ezhoumd}{GitHub}
+    $|$
+    \href{https://www.linkedin.com/in/ezhoumd/}{LinkedIn}
+\end{center}
+
+\section{Education}
+    \textbf{University of Pennsylvania} -- B.S.E. in \textbf{Mechanical Engineering \& Applied Mechanics}
+    \hfill Expected May 2030 \\
+    \textbf{Bullis School} -- Coursework: Linear Algebra, Calculus BC, Mechanics \& E\&M, Computer Science A
+    \hfill 2022 -- 2026
+
+\section{Technical Skills}
+    \textbf{CAD \& Analysis:} Onshape, Creo/Windchill, FEA, GD\&T, Engineering Drawings, DFMA, Injection Molding, Die Casting, CNC Machining, Additive Manufacturing, Rapid Prototyping, Materials \& Process Selection \\
+    \textbf{Software:} Java, Python, LaTeX \\
+    \textbf{Wet Lab:} Cell Culture, Polymer \& Nanoparticle Synthesis, Flow Cytometry, DLS, ELISA, SDS-PAGE, FlowJo, GraphPad Prism
+
+\section{Experience}
+    \textbf{Bambu Lab} -- Mechanical Design Intern
+    \hfill June -- July 2026
+    \begin{itemize}
+        \item Designed next-gen \textbf{toolhead and tool-changer} systems for 3D printers; optimized critical parts with FEA
+        \item Invented extruder with \textbf{adaptive filament gripping} and tool-change latching via \textbf{kinematic couplings}
+        \item Designed parts for \textbf{injection molding, die casting, and CNC machining} with GD\&T drawings
+    \end{itemize}
+    \textbf{Nostopharma} -- Robotics Contract Lead
+    \hfill Jan 2026 -- Present
+    \begin{itemize}
+        \item Led design of a \textbf{3-axis automated pipetting platform} generating experimental compound variants
+        \item Managing client-facing contractor project across team organization, requirements, CAD, and prototyping
+    \end{itemize}
+    \textbf{Johns Hopkins School of Medicine} -- Research Intern, Green Group
+    \hfill June -- Oct 2025
+    \begin{itemize}
+        \item Researched ocular \textbf{nanoparticle drug-delivery} platforms; ran independent in-vitro drug efficacy study
+        \item Co-authored ovarian cancer immune-profiling paper; presented at \textbf{BMES 2025} Annual Conference
+    \end{itemize}
+    \textbf{GeneImmune Biotechnology} -- Research Intern
+    \hfill July -- Aug 2024
+    \begin{itemize}
+        \item Purified and assayed influenza proteins supplying labs for flu-prevention research
+    \end{itemize}
+
+\section{Personal Projects}
+    \textbf{Recycla} -- Bottle-to-filament recycler with custom extruder and planetary gearbox; \textbf{90\% faster extrusion} than open-source alternatives\\
+    \textbf{Linear Odometry} -- High-precision linear-rail robot localization system for \textbf{high-vibration environments} \\
+    \textbf{Differential Power Takeoff} -- Multi-input gearbox enabling \textbf{dynamic torque sharing} between synchronized outputs \\
+    \textbf{MiniMe} -- \textbf{60-cent} robotics kit introducing elementary students to STEM; \textbf{400+ donated}
+
+\section{Activities}
+    \textbf{FIRST Robotics} -- FGC Team USA Coach; FTC 6417/19818 Captain
+    \hfill 2021 -- Present
+    \begin{itemize}
+        \item Led mechanical design and fabrication of robot placing \textbf{2nd of 8,000+ teams globally, 1st in the U.S.}
+        \item Coached official \textbf{Team USA} 5-student delegation in robot design and  engineering strategy for FIRST Global Challenge, a \textbf{190+ country} competition
+        \item Applied DFMA, FEA, and rapid prototyping to ship reliable hardware under tight time and cost limits
+        \item Directed a \textbf{20-member} organization across mechanical, software, and outreach sub-teams
+    \end{itemize}
+    \textbf{Kenya-Uganda Robotics Initiative} -- Curriculum Developer \& Program Lead
+    \hfill 2025 -- Present
+    \begin{itemize}
+        \item Launched FIRST Tech Challenge in Uganda; raised \textbf{\$6,000+} and taught \textbf{400+ students} across six schools
+    \end{itemize}
+    \textbf{Boy Scouts of America} -- \textbf{Eagle Scout}; demoed FTC robot to members of Congress at Capitol Hill
+    \hfill 2019 -- 2026
+
+\section{Awards}
+    \textbf{FTC World Championship} -- Inspire Award (\textbf{top 6 of 8,000+ teams}); 3x Innovate Award (\textbf{top 0.15\% worldwide}) \\
+    \textbf{FTC Chesapeake Regional} -- Inspire Award; 3x Regional Champion (\textbf{1st across a quad-state region}) \\
+    \textbf{2x President's Volunteer Service Award}
+
+\section{Publications}
+    \textbf{Zhou, E.}, et al. ``Effects of Storage Time and Temperature on Nanoparticle Performance and Properties Post-Lyophilization.'' 2025 (poster presentation) \\
+    Yang, J., et al. ``Polymeric Nanoparticle Gene Delivery to Reprogram the Tumor Immune Microenvironment in Ovarian Cancer for an Anti-Tumor Response.'' \textit{Acta Biomaterialia}, 2025 (co-author, under review) \\
+    Hong, J., Zhao, Y., \textbf{Zhou, E.}, et al. ``Progress in Henipavirus Neutralizing Antibody for Therapeutic Development.'' \textit{SciLight Press}, 2026
+
+\end{document}
