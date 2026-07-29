@@ -3,12 +3,12 @@
 % ===== ONE-PAGE FIT KNOBS =====================================================
 % These two lengths are the vertical shock absorber: they set the air above and
 % below every section heading. Tuned so the content fills the page evenly.
-% Verified: at 8pt/3pt the text fills to y=757 on a 792pt page with a 36pt
-% bottom margin -- i.e. flush to the margin, one page, no overfull boxes.
-% If you add content and it spills to 2 pages: drop to 7pt/3pt, then 6pt/2pt.
-% If you cut content and a gap opens: raise to 9pt/4pt.
+% Verified with the GPA/SAT line in place: at 6pt/4pt the text fills to y=752
+% on a 792pt page with a 36pt bottom margin -- one page, no overfull boxes.
+% 7pt still fits but overruns the margin slightly; 8pt spills to 2 pages.
+% If you add content: drop to 5pt, then 4pt. If you cut content: raise to 7pt.
 % Body text stays at 10pt either way -- do not shrink the font to fit.
-\newcommand{\secbefore}{2pt}
+\newcommand{\secbefore}{6pt}
 \newcommand{\secafter}{4pt}
 % =============================================================================
 
@@ -69,14 +69,14 @@ pdfsubject = {Mechanical Engineering Resume}
 \section{Education}
     \textbf{University of Pennsylvania} -- B.S.E. in \textbf{Mechanical Engineering \& Applied Mechanics}
     \hfill Expected May 2030 \\
-    \textbf{Bullis School}
-    \hfill 2022 -- 2026 \\ 
-     GPA: 4.0/4.0 -- SAT: 1560/1600 -- Coursework: Linear Algebra, Calculus BC, Mechanics \& E\&M, Computer Science A
+    \textbf{Bullis School} -- \textbf{GPA: 4.0/4.0} $|$ \textbf{SAT: 1560/1600}
+    \hfill 2022 -- 2026 \\
+    Coursework: Linear Algebra, Calculus BC, Mechanics \& E\&M, Computer Science A
 
 \section{Technical Skills}
     \textbf{CAD \& Analysis:} Onshape, Creo/Windchill, FEA, GD\&T, Engineering Drawings, DFMA, Injection Molding, Die Casting, CNC Machining, Additive Manufacturing, Rapid Prototyping, Materials \& Process Selection \\
-    \textbf{Software:} Java, Python, LaTeX \\
-    \textbf{Wet Lab:} Cell Culture, Polymer \& Nanoparticle Synthesis, Flow Cytometry, DLS, ELISA, SDS-PAGE, FlowJo, GraphPad Prism
+    \textbf{Software:} Java, Python, LaTeX, FlowJo, GraphPad Prism \\
+    \textbf{Wet Lab:} Cell Culture, Polymer \& Nanoparticle Synthesis, Flow Cytometry, DLS, ELISA, SDS-PAGE
 
 \section{Experience}
     \textbf{Bambu Lab} -- Mechanical Design Intern
@@ -105,13 +105,13 @@ pdfsubject = {Mechanical Engineering Resume}
     \end{itemize}
 
 \section{Personal Projects}
-    \textbf{Recycla} -- Bottle-to-filament recycler with custom extruder and planetary gearbox; \textbf{90\% faster extrusion} than open-source alternatives\\
+    \textbf{Recycla} -- Bottle-to-filament recycler; custom extruder and planetary gearbox, \textbf{90\% faster than open-source} \\
     \textbf{Linear Odometry} -- High-precision linear-rail robot localization system for \textbf{high-vibration environments} \\
     \textbf{Differential Power Takeoff} -- Multi-input gearbox enabling \textbf{dynamic torque sharing} between synchronized outputs \\
     \textbf{MiniMe} -- \textbf{60-cent} robotics kit introducing elementary students to STEM; \textbf{400+ donated}
 
 \section{Activities}
-    \textbf{FIRST Robotics} -- 2026 FGC Team USA Coach; FTC 6417/19818 Captain (2021 -- 2026)
+    \textbf{FIRST Robotics} -- 2026 FGC Team USA Coach; FTC 6417/19818 Captain
     \hfill 2021 -- Present
     \begin{itemize}
         \item Coaching official \textbf{Team USA} student delegation in robot design and engineering strategy for FIRST Global Challenge
